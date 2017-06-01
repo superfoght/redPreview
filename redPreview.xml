@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/plugin-install.dtd">
+<install type="plugin" version="1.5" method="upgrade" group="acymailing">
+	<name>redPreview</name>
+	<creationDate>June 2017</creationDate>
+	<version>1.0.0</version>
+	<author>Bo Foght - RedWEB</author>
+	<authorEmail>bo@redweb.dk</authorEmail>
+	<authorUrl>http://www.redweb.dk</authorUrl>
+	<copyright>Copyright (C) 2017 redWEB - All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
+	<description>This plugin enables you to make a preview tag</description>
+	<files>
+		<filename plugin="redPreview">redPreview.php</filename>
+	</files>
+</install>

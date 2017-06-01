@@ -47,8 +47,10 @@ class plgAcymailingRedPreview extends JPlugin
 	 //The last argument $send indicates if the message will be send (set to true) or displayed as a preview (set to false)
 	function acymailing_replacetags(&$email,$send = true){
 		//You should replace tags in the three following variables:
-		$email->body = str_replace('{preview}','<div style="display:none;" />',$email->body); //HTML version of the Newsletter
-		$email->body = str_replace('{/preview}','</div>',$email->body); //HTML version of the Newsletter
+		$previewStart = "<div style='display:none;'>";
+		$previewEnd = "</div>";
+		$email->body = str_replace('{preview}',$previewStart,$email->body); //HTML version of the Newsletter
+		$email->body = str_replace('{/preview}',$previewEnd,$email->body); //HTML version of the Newsletter
 	}
 
 	//This function will be triggered during the send process and on the preview screen to replace personal tags (user specific information)
